@@ -3,7 +3,7 @@ package org.lynn.storage;
 import java.util.Collection;
 import java.util.Map;
 
-import org.lynn.common.model.Unique;
+import org.lynn.util.common.model.Unique;
 
 /**
  * 普通 java 实例与存储设备的数据结构之间的映射接口

@@ -3,7 +3,7 @@ package org.lynn.example.web.param;
 import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.NotBlank;
-import org.lynn.common.validate.Upload;
+import org.lynn.util.common.validate.Upload;
 import org.springframework.web.multipart.MultipartFile;
 
 public class User {

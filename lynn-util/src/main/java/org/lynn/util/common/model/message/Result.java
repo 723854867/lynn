@@ -1,8 +1,8 @@
-package org.lynn.common.model.message;
+package org.lynn.util.common.model.message;
 
 import java.io.Serializable;
 
-import org.lynn.common.model.code.ICode;
+import org.lynn.util.common.model.code.ICode;
 
 /**
  * 调用结果

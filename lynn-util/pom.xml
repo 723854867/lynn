@@ -29,5 +29,15 @@
 			<artifactId>jackson-annotations</artifactId>
 			<optional>true</optional>
 		</dependency>
+		<dependency>
+			<groupId>javax.validation</groupId>
+			<artifactId>validation-api</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 </project>

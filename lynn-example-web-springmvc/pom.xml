@@ -88,7 +88,7 @@
 
 		<dependency>
 			<groupId>org.lynn</groupId>
-			<artifactId>lynn-common</artifactId>
+			<artifactId>lynn-util</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 		<dependency>

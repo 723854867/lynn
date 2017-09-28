@@ -1,11 +1,11 @@
-package org.lynn.common;
+package org.lynn.util.common;
 
 import java.nio.charset.Charset;
 
-import org.lynn.common.model.code.Code;
-import org.lynn.common.model.message.Result;
+import org.lynn.util.common.model.code.Code;
+import org.lynn.util.common.model.message.Result;
 
-public interface Constants {
+public interface Consts {
 
 	final Charset UTF_8				= Charset.forName("UTF-8");
 	

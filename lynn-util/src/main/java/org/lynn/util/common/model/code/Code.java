@@ -1,6 +1,6 @@
-package org.lynn.common.model.code;
+package org.lynn.util.common.model.code;
 
-import org.lynn.common.Lang;
+import org.lynn.util.common.Lang;
 
 /**
  * 结果码：可以是rpc调用的返回结果码，也可以是网络请求返回的结果码，也可以是方法调用返回的结果码

@@ -1,4 +1,4 @@
-package org.lynn.common.validate;
+package org.lynn.util.common.validate;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

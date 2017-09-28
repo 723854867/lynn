@@ -1,4 +1,4 @@
-package org.lynn.common.model.code;
+package org.lynn.util.common.model.code;
 
 public interface ICode {
 	

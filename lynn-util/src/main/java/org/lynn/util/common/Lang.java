@@ -1,4 +1,4 @@
-package org.lynn.common;
+package org.lynn.util.common;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Properties;
 
-import org.lynn.common.enums.FileType;
+import org.lynn.util.common.enums.FileType;
 import org.lynn.util.io.ResourceUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -53,12 +53,12 @@ public class Lang {
 		String fileName = "lang_" + locale + FileType.PROPERTIES.suffix();
 		try {
 			in = ResourceUtil.getResourceAsStream(Lang.class, "/conf/lang/" + fileName);
-			properties.load(new InputStreamReader(in, Constants.UTF_8));
+			properties.load(new InputStreamReader(in, Consts.UTF_8));
 		} catch (FileNotFoundException | NullPointerException | NoSuchFileException e) {
 			logger.warn("系统语言文件 - {} 不存在，将使用系统默认语言文件!", fileName);
 			try {
 				in = ResourceUtil.getResourceAsStream(Lang.class, "/conf/lang/lang_zh_CN.properties");
-				properties.load(new InputStreamReader(in, Constants.UTF_8));
+				properties.load(new InputStreamReader(in, Consts.UTF_8));
 			} catch (Exception e1) {
 				logger.error("系统默认语言文件加载失败，系统即将关闭......", e1);
 				System.exit(1);
@@ -87,7 +87,7 @@ public class Lang {
 			File file = ResourceUtil.getFile("classpath:conf/lang/" + fileName);
 			in = new FileInputStream(file);
 			Properties properties = new Properties();
-			properties.load(new InputStreamReader(in, Constants.UTF_8));
+			properties.load(new InputStreamReader(in, Consts.UTF_8));
 			for (Entry<Object, Object> entry : properties.entrySet()) 
 				languages.put(entry.getKey().toString(), entry.getValue().toString());
 		} catch (NullPointerException | FileNotFoundException | NoSuchFileException e) {

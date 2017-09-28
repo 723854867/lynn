@@ -1,6 +1,8 @@
-package org.lynn.common.enums;
+package org.lynn.util.common.enums;
 
 public enum FileType {
+	
+	LUA(".lua"),
 	
 	PROPERTIES(".properties");
 	

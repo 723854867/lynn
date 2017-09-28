@@ -17,7 +17,7 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.lynn</groupId>
-			<artifactId>lynn-common</artifactId>
+			<artifactId>lynn-util</artifactId>
 			<version>${project.version}</version>
 		</dependency>
 
@@ -26,12 +26,17 @@
 			<artifactId>jedis</artifactId>
 			<optional>true</optional>
 		</dependency>
-		
-		<!-- 
+
 		<dependency>
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-pool2</artifactId>
 			<optional>true</optional>
-		</dependency> -->
+		</dependency>
+
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+			<optional>true</optional>
+		</dependency>
 	</dependencies>
 </project>

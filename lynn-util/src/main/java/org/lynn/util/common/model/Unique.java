@@ -1,4 +1,4 @@
-package org.lynn.common.model;
+package org.lynn.util.common.model;
 
 import java.io.Serializable;
 

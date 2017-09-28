@@ -2,8 +2,8 @@ package org.lynn.example.web.controller.internal;
 
 import java.util.List;
 
-import org.lynn.common.model.code.Code;
-import org.lynn.common.model.message.Result;
+import org.lynn.util.common.model.code.Code;
+import org.lynn.util.common.model.message.Result;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.validation.BindException;

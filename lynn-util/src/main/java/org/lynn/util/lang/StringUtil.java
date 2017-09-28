@@ -2,6 +2,8 @@ package org.lynn.util.lang;
 
 public class StringUtil {
 	
+	public static final String EMPTY					= "";
+	
 	/**
 	 * 任何空格都算在内
 	 * 

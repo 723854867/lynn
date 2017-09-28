@@ -1,4 +1,4 @@
-package org.lynn.common.validate;
+package org.lynn.util.common.validate;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

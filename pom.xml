@@ -27,6 +27,7 @@
 		<jedis.version>2.9.0</jedis.version>
 		<janino.version>3.0.7</janino.version>
 		<commons-io.version>2.5</commons-io.version>
+		<commons-codec.version>1.10</commons-codec.version>
 		<commons-pool2.version>2.4.2</commons-pool2.version>
 		<commons-compiler.version>3.0.7</commons-compiler.version>
 		<commons-fileupload.version>1.3.3</commons-fileupload.version>
@@ -359,6 +360,11 @@
 				<artifactId>commons-pool2</artifactId>
 				<version>${commons-pool2.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>commons-codec</groupId>
+				<artifactId>commons-codec</artifactId>
+				<version>${commons-codec.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -445,7 +451,6 @@
 	<modules>
 		<module>lynn-util</module>
 		<module>lynn-example-web-springmvc</module>
-		<module>lynn-common</module>
 		<module>lynn-storage</module>
 	</modules>
 </project>
