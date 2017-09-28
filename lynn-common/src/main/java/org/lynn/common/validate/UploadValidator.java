@@ -1,0 +1,21 @@
+package org.lynn.common.validate;
+
+import javax.validation.ConstraintValidator;
+import javax.validation.ConstraintValidatorContext;
+
+import org.springframework.web.multipart.MultipartFile;
+
+public class UploadValidator implements ConstraintValidator<Upload, MultipartFile> {
+	
+	private int maxmium;
+
+	@Override
+	public void initialize(Upload upload) {
+		this.maxmium = upload.maxmium();
+	}
+
+	@Override
+	public boolean isValid(MultipartFile value, ConstraintValidatorContext context) {
+		return null == value ? true : value.getSize() <= maxmium;
+	}
+}
