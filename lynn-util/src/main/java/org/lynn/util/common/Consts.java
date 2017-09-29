@@ -10,7 +10,7 @@ public interface Consts {
 	final Charset UTF_8				= Charset.forName("UTF-8");
 	
 	interface Results {
-		Result OK					= new Result(Code.OK);
-		Result SYSTEM_ERROR			= new Result(Code.SYSTEM_ERROR);
+		Result<Void> OK						= new Result<Void>(Code.OK);
+		Result<Void> SYSTEM_ERROR			= new Result<Void>(Code.SYSTEM_ERROR);
 	}
 }

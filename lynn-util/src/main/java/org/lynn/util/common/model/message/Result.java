@@ -1,7 +1,5 @@
 package org.lynn.util.common.model.message;
 
-import java.io.Serializable;
-
 import org.lynn.util.common.model.code.ICode;
 
 /**
@@ -11,7 +9,7 @@ import org.lynn.util.common.model.code.ICode;
  *
  * @param <T>
  */
-public class Result<T extends Serializable> implements Message {
+public class Result<T> implements Message {
 
 	private static final long serialVersionUID = 2129932129375627930L;
 	

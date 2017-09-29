@@ -23,7 +23,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(Exception.class)
 	@ResponseBody
 	public Result<?> handler(Exception e) {
-		Result<?> result = new Result(Code.SYSTEM_ERROR);
+		Result<Void> result = new Result<Void>(Code.SYSTEM_ERROR);
 		result.setDesc(e.getMessage());
 		logger.warn("系统错误！", e);
 		return result;
@@ -50,7 +50,7 @@ public class GlobalExceptionHandler {
 	@ExceptionHandler(MaxUploadSizeExceededException.class)
 	@ResponseBody
 	public Result<?> uploadSizeExceededHandler(MaxUploadSizeExceededException ex) {
-		return new Result(Code.UPLOAD_SIZE_EXCEEDED, ex.getMaxUploadSize());
+		return new Result<Long>(Code.UPLOAD_SIZE_EXCEEDED, ex.getMaxUploadSize());
 	}
 	
 	private Result<?> _validatorError(BindingResult bindingResult) { 
@@ -60,7 +60,7 @@ public class GlobalExceptionHandler {
 			reason.append(error.getField()).append("-").append(error.getDefaultMessage()).append(";");
 		reason.deleteCharAt(reason.length() - 1);
 		reason.append("]");
-		Result<?> result = new Result(Code.PARAM_ERROR);
+		Result<Void> result = new Result<Void>(Code.PARAM_ERROR);
 		result.setDesc(result.getDesc() + ":" + reason.toString());
 		return result;
 	}

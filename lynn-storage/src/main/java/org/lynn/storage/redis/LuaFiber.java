@@ -88,6 +88,7 @@ class LuaFiber {
 			logger.warn("存在多个同名的 lua 脚本 - {}！", cmd);
 	}
 	
+	@SuppressWarnings("unchecked")
 	<T> T invokeScript(ILuaCmd cmd, int keyNum, Object... params) throws Exception {
 		Script script = scripts.get(cmd.name().toLowerCase());
 		if (null == script)
